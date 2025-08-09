@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: instacart_db
+    environment:
+      POSTGRES_DB: instacart_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/src/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - instacart_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: instacart_phpmyadmin
+    environment:
+      PMA_HOST: postgres
+      PMA_PORT: 5432
+      PMA_USER: postgres
+      PMA_PASSWORD: password123
+      POSTGRES_DB: instacart_db
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - instacart_network
+
+  backend:
+    build: ./backend
+    container_name: instacart_backend
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: instacart_db
+      DB_USER: postgres
+      DB_PASSWORD: password123
+      JWT_SECRET: your_super_secret_jwt_key_12345
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - postgres
+    networks:
+      - instacart_network
+
+  frontend:
+    build: ./frontend
+    container_name: instacart_frontend
+    environment:
+      VITE_API_URL: http://localhost:3000/api
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - instacart_network
+
+volumes:
+  postgres_data:
+
+networks:
+  instacart_network:
+    driver: bridge

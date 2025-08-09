@@ -1,0 +1,82 @@
+{
+  "app": {
+    "title": "InstaCart",
+    "subtitle": "Grocery Delivery Service"
+  },
+  "auth": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "welcome": "Welcome back!",
+    "loginError": "Invalid credentials",
+    "logout": "Logout"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "orders": "Orders",
+    "cart": "Cart",
+    "profile": "Profile"
+  },
+  "customer": {
+    "browseProducts": "Browse Products",
+    "addToCart": "Add to Cart",
+    "viewCart": "View Cart",
+    "checkout": "Checkout",
+    "placeOrder": "Place Order",
+    "orderPlaced": "Order placed successfully!",
+    "emptyCart": "Your cart is empty",
+    "total": "Total",
+    "deliveryAddress": "Delivery Address",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash",
+    "creditCard": "Credit Card"
+  },
+  "store": {
+    "orderManagement": "Order Management",
+    "newOrders": "New Orders",
+    "confirmed": "Confirmed",
+    "preparing": "Preparing",
+    "ready": "Ready",
+    "markConfirmed": "Mark as Confirmed",
+    "markPreparing": "Mark as Preparing",
+    "markReady": "Mark as Ready"
+  },
+  "driver": {
+    "availableOrders": "Available Orders",
+    "myDeliveries": "My Deliveries",
+    "acceptOrder": "Accept Order",
+    "markPickedUp": "Mark as Picked Up",
+    "markDelivered": "Mark as Delivered",
+    "outForDelivery": "Out for Delivery",
+    "delivered": "Delivered"
+  },
+  "order": {
+    "status": {
+      "placed": "Placed",
+      "confirmed": "Confirmed", 
+      "preparing": "Preparing",
+      "ready": "Ready for Pickup",
+      "out_for_delivery": "Out for Delivery",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "details": "Order Details",
+    "items": "Items",
+    "customer": "Customer",
+    "createdAt": "Created At"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "price": "Price",
+    "quantity": "Quantity",
+    "category": "Category",
+    "description": "Description",
+    "search": "Search",
+    "filter": "Filter",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic"
+  }
+}

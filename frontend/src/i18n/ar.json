@@ -1,0 +1,82 @@
+{
+  "app": {
+    "title": "انستا كارت",
+    "subtitle": "خدمة توصيل البقالة"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "welcome": "أهلاً بعودتك!",
+    "loginError": "بيانات اعتماد غير صحيحة",
+    "logout": "تسجيل الخروج"
+  },
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "cart": "السلة",
+    "profile": "الملف الشخصي"
+  },
+  "customer": {
+    "browseProducts": "تصفح المنتجات",
+    "addToCart": "إضافة للسلة",
+    "viewCart": "عرض السلة",
+    "checkout": "الدفع",
+    "placeOrder": "تأكيد الطلب",
+    "orderPlaced": "تم تقديم الطلب بنجاح!",
+    "emptyCart": "السلة فارغة",
+    "total": "المجموع",
+    "deliveryAddress": "عنوان التوصيل",
+    "paymentMethod": "طريقة الدفع",
+    "cash": "نقداً",
+    "creditCard": "بطاقة ائتمان"
+  },
+  "store": {
+    "orderManagement": "إدارة الطلبات",
+    "newOrders": "طلبات جديدة",
+    "confirmed": "مؤكد",
+    "preparing": "قيد التحضير",
+    "ready": "جاهز",
+    "markConfirmed": "تأكيد الطلب",
+    "markPreparing": "بدء التحضير",
+    "markReady": "تجهيز الطلب"
+  },
+  "driver": {
+    "availableOrders": "الطلبات المتاحة",
+    "myDeliveries": "توصيلاتي",
+    "acceptOrder": "قبول الطلب",
+    "markPickedUp": "تم الاستلام",
+    "markDelivered": "تم التوصيل",
+    "outForDelivery": "في الطريق",
+    "delivered": "تم التوصيل"
+  },
+  "order": {
+    "status": {
+      "placed": "تم الطلب",
+      "confirmed": "مؤكد",
+      "preparing": "قيد التحضير",
+      "ready": "جاهز للاستلام",
+      "out_for_delivery": "في الطريق",
+      "delivered": "تم التوصيل",
+      "cancelled": "ملغى"
+    },
+    "details": "تفاصيل الطلب",
+    "items": "العناصر",
+    "customer": "العميل",
+    "createdAt": "تاريخ الطلب"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "category": "الفئة",
+    "description": "الوصف",
+    "search": "بحث",
+    "filter": "تصفية",
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  }
+}
